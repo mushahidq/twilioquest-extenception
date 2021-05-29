@@ -110,6 +110,12 @@
                  "height":24,
                  "id":91,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"objectiveName",
+                         "type":"string",
+                         "value":"editing_objectives"
+                        }],
                  "rotation":0,
                  "type":"chest-red",
                  "visible":true,
@@ -126,12 +132,12 @@
                         {
                          "name":"hackable",
                          "type":"bool",
-                         "value":false
+                         "value":true
                         }, 
                         {
                          "name":"objectiveName",
                          "type":"string",
-                         "value":"example_objective2"
+                         "value":"editing_maps"
                         }],
                  "rotation":0,
                  "type":"",
@@ -173,8 +179,8 @@
                  "type":"npc",
                  "visible":true,
                  "width":0,
-                 "x":119,
-                 "y":287
+                 "x":130.333333333333,
+                 "y":270.333333333333
                 }, 
                 {
                  "gid":10011,
@@ -185,12 +191,12 @@
                         {
                          "name":"hackable",
                          "type":"bool",
-                         "value":false
+                         "value":true
                         }, 
                         {
                          "name":"objectiveName",
                          "type":"string",
-                         "value":"example_objective2"
+                         "value":"getting_started"
                         }],
                  "rotation":0,
                  "type":"",
@@ -208,12 +214,12 @@
                         {
                          "name":"hackable",
                          "type":"bool",
-                         "value":false
+                         "value":true
                         }, 
                         {
                          "name":"objectiveName",
                          "type":"string",
-                         "value":"example_objective2"
+                         "value":"creating_levels"
                         }],
                  "rotation":0,
                  "type":"",

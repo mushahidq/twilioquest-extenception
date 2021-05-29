@@ -12,5 +12,5 @@
   "flavorTextOverrides": {
     "bookshelf": "There's nothing like a good book."
   },
-  "objectives": ["file_setup", "creating_levels", "editing_maps", "objectives"]
+  "objectives": ["getting_started", "creating_levels", "editing_maps", "editing_objectives"]
 }

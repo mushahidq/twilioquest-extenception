@@ -1,33 +1,50 @@
 conversation(display_name="Cedric")
   case lastResponse
-    when "nice_to_meet"
-    when "you_seem_nice"
+    when "im_exited"
+    when "this_looks_fun"
       statement#final
       responses
-
-    when "who_are_you"
-      statement#cedric
+    
+    when "why_is_this_so_random"
+      statement#colourful
       responses
-        response#nice_to_meet.
-          Nice to meet you!
-        response#you_seem_nice.
-          You seem nice!
+        response#what_is_this_mission.
+          Can you tell me about the special mission?
+        response#im_excited.
+          I'm exited for this!
+        response#this_looks_fun.
+          This looks fun!
+
+    when "what_is_this_mission"
+      statement#mission
+      responses
+        response#why_is_this_so_random.
+          Why is this mission so colourful and seem random?
+        response#im_exited.
+          I'm exited for this!
+        response#this_looks_fun.
+          This looks fun!
 
     default
-      statement#default
-      responses
-        response#who_are_you.
-          Hello, who are you?
+        statement#default
+        responses
+          response#what_is_this_mission.
+            Hello, what is the special mission?
+          response#why_is_this_so_random.
+            Why is this mission so colourful and seem random?
 
   statements
     statement#default
       text.
-        Welcome aboard the #[span.highlight Fog Owl!]
+        Welcome to this #[span.highlight special mission!]
       speech.
-        Welcome aboard the #[break(strength="medium")] Fog Owl!
-    statement#cedric
+        Welcome to this #[break(strength="medium")] special mission!
+    statement#mission
       text.
-        I am Cedric, your Cloud navigational assistant!
+        This is a special mission which will teach you how to create your own missions. You can help your friends learn new things by creating your own missions.
+    statement#colourful
+      text.
+        It was deliberately made so to show you some of the many amazing assets available in TwilioQuest you can use to create your missions.
     statement#final
       text.
-        Thank you! Now get exploring!
+        All the best! Now get to learning and creating!
