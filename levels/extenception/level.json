@@ -1,0 +1,16 @@
+{
+  "title": "Extenception",
+  "description": "A TwilioQuest extension to help users create their first extension.",
+  "mission_icon": "mission_icon.png",
+  "is_mission": true,
+  "priority": 1,
+  "backgroundMusic": "hackertheme_104771b",
+  "backgroundEffect": {
+    "key": "vr",
+    "options": {}
+  },
+  "flavorTextOverrides": {
+    "bookshelf": "There's nothing like a good book."
+  },
+  "objectives": ["file_setup", "creating_levels", "editing_maps", "objectives"]
+}
