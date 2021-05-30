@@ -1,18 +1,24 @@
 {
-  "title": "Example Objective",
-  "description": "This is what an <strong>objective description</strong> looks like!",
+  "title": "Getting Started",
+  "description": "This will cover the first steps towards buidling your <strong>own</strong> TwilioQuest extension",
   "validation_fields": [
     {
       "name": "answer1",
       "type": "text",
-      "placeholder": "type your answer here",
-      "label": "What is the name of the company that makes TwilioQuest?"
+      "placeholder": "<github_username>/<repository_name>",
+      "label": "Please provide your Github username and the repository name:"
     },
     {
       "name": "answer2",
       "type": "text",
+      "placeholder": "/path/to/extensions/folder/<your_extension>",
+      "label": "Enter the path to your local repository"
+    },
+    {
+      "name": "answer3",
+      "type": "text",
       "placeholder": "type your answer here",
-      "label": "What is 2 + 2? Write the numerical response below."
+      "label": "Where will you be able to access the levels you create inside TwilioQuest?"
     }
   ],
   "rewards": {
