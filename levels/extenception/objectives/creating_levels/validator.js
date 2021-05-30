@@ -50,5 +50,6 @@ module.exports = async function (helper) {
     `
       Hooray! You've created your first level!
     `,
+    [{ name: "LEVEL_NAME", value: answer1 }]
   );
 };
