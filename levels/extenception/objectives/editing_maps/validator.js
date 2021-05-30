@@ -55,8 +55,7 @@ module.exports = async function (helper) {
 
   helper.success(
     `
-      Hooray! You did it! You can now start editing this extension!
+      Hooray! You did it! You can now start editing maps to your liking!
     `,
-    [{ name: "LEVEL_NAME", value: answer1 }],
   );
 };

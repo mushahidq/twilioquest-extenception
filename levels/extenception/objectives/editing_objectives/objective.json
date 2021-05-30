@@ -1,21 +1,21 @@
 {
-  "title": "Example Objective 2",
-  "description": "This is what an <strong>objective description</strong> looks like!",
+  "title": "Editing Objectives",
+  "description": "This is the final objective of this mission. This will teach you the basics of how you can create and edit objectives in your missions.",
   "validation_fields": [
     {
       "name": "answer1",
       "type": "text",
       "placeholder": "type your answer here",
-      "label": "What is the name of the company that makes TwilioQuest?"
+      "label": "What is file that contains the validation code for the objective?"
     },
     {
       "name": "answer2",
       "type": "text",
       "placeholder": "type your answer here",
-      "label": "What is 2 + 2? Write the numerical response below."
+      "label": "Twilio provides an object that lets you access and set environment variables, access objective answers etc. What is it called?"
     }
   ],
   "rewards": {
-    "xp": 100
+    "xp": 500
   }
 }
