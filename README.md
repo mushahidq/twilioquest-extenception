@@ -1,3 +1,36 @@
+# About this extension
+## Inspiration
+
+An extension that helps people learn about creating extensions for TwilioQuest seemed like a good idea since it could inspire others to create more extensions that could help people.
+
+## What it does
+
+It is and extension for TwilioQuest that covers the basics steps of developing an extension for TwilioQuest using information from the official [TwilioQuest Extension Guide](https://twilioquest.github.io/extension-docs/guide/)
+
+## How we built it
+
+We used the TwilioQuest template repository and created our extension from there. We edited the map using Tiled and used the TwilioQuest extension docs to learn about developing extensions for the game. Our level is called Extenception and covers some of the steps required to creating a TwilioQuest extension.
+We used the TwilioQuest extension docs as reference and the guides inside the level are very similar to them. We added things that we felt might be useful to a new developer and also things from TwilioQuest Docs that helped us create this extension itself.
+We also incorporated some conversation with Cedric to explain some things to the user.
+
+## Challenges we ran into
+
+Working with a new software and going through its documentation and solving unknown problems
+We wanted to create a multi-environment overlapping mission to showcase the different amazing assets in the game to inspire people but because of the time constraints ended up creating a simpler level which also looks quite good. This goes to show that even for a smaller level the different assets for different environments in TwilioQuest can be used to create beautiful levels.
+
+## Accomplishments that we're proud of
+
+Created a quest within such short time and learned something exquisite.
+
+## What we learned
+
+How to create a level for the Fog Owl VR Training Computer and planning needed for creating a story based game.
+
+## What's next for Extenception
+
+Will make it multi-level with more complex graphics and if possible add personalized obstacles
+Hopefully, when we are able to create worlds for the Cloud in TwilioQuest, we would like to work on this more and create this into an overlapping multi-layered adventure with more story elements and more environments.
+
 # TwilioQuest Extension Template
 Interested in creating an extension for TwilioQuest? You've come to the right place! Using this repository as a template, you can create new levels, objectives, characters, and items in TwilioQuest.
 
