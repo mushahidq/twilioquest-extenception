@@ -1,5 +1,9 @@
-# The "Help" Tab
+# Editing Maps
 
-We may remove this tab and content in the future, but in the current iteration of TwilioQuest, this is where you would put more hand-holdy content intended to guide the player through what needed to be done.
+[TwilioQuest Docs on editing maps](https://twilioquest.github.io/extension-docs/guide/maps.html#how-to-use-tiled).
 
-We find that what works better is linking to external resources on the web, rather than recreatign a tutorial here.
+[A multi-part series about Tiled](https://gamefromscratch.com/tiled-map-editor-tutorial-series/)
+
+Tiled docs on [working with layers](https://doc.mapeditor.org/en/stable/manual/objects/) and [editing tile layers](https://doc.mapeditor.org/en/stable/manual/editing-tile-layers/)
+
+Tiled docs on [working with objects](https://doc.mapeditor.org/en/stable/manual/layers/) and [editing properties of objects](https://doc.mapeditor.org/en/stable/manual/custom-properties/)
