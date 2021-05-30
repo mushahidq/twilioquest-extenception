@@ -52,7 +52,6 @@ module.exports = async function (helper) {
   }
 
   try {
-    console.log(path.join(answer2,"package.json"))
     var stats = fs.statSync(path.join(answer2,"package.json"));
     if (!stats.isFile()) throw "Not a file";
   } catch (e) {
@@ -78,7 +77,10 @@ module.exports = async function (helper) {
   }
   // The way we usually write validators is to fail fast, and then if we reach
   // the end, we know the user got all the answers right!
-  helper.success(`
-    Hooray! You did it! You can now start editing this extension!
-  `);
+  helper.success(
+    `
+      Hooray! You did it! You can now start editing this extension!
+    `,
+    [{ name: "EXTENSION_FOLDER", value: answer2 }]
+  );
 };

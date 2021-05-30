@@ -4,9 +4,9 @@ third-party modules from npm, or your own code, just like a regular
 Node.js module (since that's what this is!)
 */
 const assert = require("assert");
-const R = require("ramda");
-const { isTwilio } = require("../lib/example_helper");
-
+const fetch = require('node-fetch');
+const fs = require("fs");
+var path = require('path');
 /*
 Objective validators export a single function, which is passed a helper
 object. The helper object contains information passed in from the game UI,
@@ -18,31 +18,38 @@ have completed the challenge as instructed.
 */
 module.exports = async function (helper) {
   // We start by getting the user input from the helper
-  const { answer1, answer2 } = helper.validationFields;
+  //const { answer1, answer2 } = helper.validationFields;
+  const answer1 = helper.getNormalizedInput("answer1", { lowerCase: false });
+  const ext_folder = helper.env.TQ_EXTENSION_FOLDER;
 
-  // Next, you test the user input - fail fast if they get one of the
-  // answers wrong, or some aspect is wrong! Don't provide too much
-  // negative feedback at once, have the player iterate.
-  if (!answer1 || !isTwilio(answer1)) {
+  if (!answer1) {
     return helper.fail(`
-      The answer to the first question is incorrect. The company that
-      makes TwilioQuest starts with a "T" and ends with a "wilio".
+      Please enter the name of your level.
     `);
   }
 
-  // You can use npm or core Node.js dependencies in your validators!
   try {
-    assert.strictEqual(R.add(2, 2), Number(answer2));
+    var stats = fs.statSync(path.join(ext_folder, "levels", answer1));
+    if (!stats.isDirectory()) throw "Not a Directory";
   } catch (e) {
     return helper.fail(`
-      The second answer you provided was either not a number, or not the
-      correct response for "what is 2 + 2".
+      The folder for the level was not found.
     `);
   }
 
-  // The way we usually write validators is to fail fast, and then if we reach
-  // the end, we know the user got all the answers right!
-  helper.success(`
-    Hooray! You did it!
-  `);
+  try {
+    var stats = fs.statSync(path.join(ext_folder, "levels", answer1, "level.json"));
+    if (!stats.isFile()) throw "Not a File";
+  } catch (e) {
+    return helper.fail(`
+      \`level.json\` was not found inside the folder.
+    `);
+  }
+
+  helper.success(
+    `
+      Hooray! You did it! You can now start editing this extension!
+    `,
+    [{ name: "LEVEL_NAME", value: answer1 }],
+  );
 };
