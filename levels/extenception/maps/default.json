@@ -165,24 +165,6 @@
                  "y":370.666666666667
                 }, 
                 {
-                 "height":0,
-                 "id":109,
-                 "name":"cedric",
-                 "point":true,
-                 "properties":[
-                        {
-                         "name":"conversation",
-                         "type":"string",
-                         "value":"cedric"
-                        }],
-                 "rotation":0,
-                 "type":"npc",
-                 "visible":true,
-                 "width":0,
-                 "x":130.333333333333,
-                 "y":240.833333333333
-                }, 
-                {
                  "gid":10011,
                  "height":48,
                  "id":110,
@@ -227,6 +209,24 @@
                  "width":72,
                  "x":192,
                  "y":488.666666666667
+                }, 
+                {
+                 "gid":10016,
+                 "height":32,
+                 "id":115,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"conversation",
+                         "type":"string",
+                         "value":"cedric"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":116,
+                 "y":256.666666666667
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -274,7 +274,7 @@
          "y":0
         }],
  "nextlayerid":44,
- "nextobjectid":114,
+ "nextobjectid":116,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.5.0",
@@ -300,6 +300,10 @@
         {
          "firstgid":10014,
          "source":"..\/..\/..\/tilesets\/MyCustomObjects.json"
+        }, 
+        {
+         "firstgid":10015,
+         "source":"..\/..\/..\/..\/.bundled\/tilesets\/TwilioQuestNPCs.json"
         }],
  "tilewidth":24,
  "type":"map",
