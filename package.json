@@ -6,8 +6,9 @@
     "twilioquest": "3.1.44"
   },
   "dependencies": {
-    "got": "^11.8.2",
     "node-fetch": "^3.2.10",
-    "ramda": "^0.27.1"
+    "got": "^11.8.5",
+    "node-fetch": "^2.6.7",
+    "ramda": "^0.27.2"
   }
 }
